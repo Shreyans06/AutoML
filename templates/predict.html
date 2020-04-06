@@ -1,0 +1,42 @@
+{% extends "home.html" %}
+{% block content %}
+<div class="content-section">
+    <form action="" enctype="multipart/form-data" method="post">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <div class="form-group">
+                {{ form.model_file.label(class="form-control-label") }}
+
+                {% if form.model_file.errors %}
+                {{ form.model_file(class="form-control is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.model_file.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.model_file(class="form-control-file") }}
+                {% endif %}
+            </div>
+            <div class="form-group">
+                {{ form.predict_file.label(class="form-control-label") }}
+
+                {% if form.predict_file.errors %}
+                {{ form.predict_file(class="form-control is-invalid") }}
+                <div class="invalid-feedback">
+                    {% for error in form.predict_file.errors %}
+                    <span>{{ error }}</span>
+                    {% endfor %}
+                </div>
+                {% else %}
+                {{ form.predict_file(class="form-control-file") }}
+                {% endif %}
+            </div>
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-primary") }}
+        </div>
+    </form>
+</div>
+
+{% endblock content %}

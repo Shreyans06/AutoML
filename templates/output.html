@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+{% block content %}
+<div class="content-section">
+    <div>
+        <p>Accuracy</p>
+        {{ score*100 }} %
+    </div>
+    <div>
+        <a href= "{{ url_for('uploaded_file',filename='best_model1.hdf5') }}" download>Click here to download model file</a>
+    </div>
+</div>
+
+
+{% endblock content %}
