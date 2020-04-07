@@ -13,54 +13,47 @@
 <body>
 
 <div class="container-fluid" id="body_content">
-    <div class="row">
-        <div class="col">
-            AutoML Logo
+    <div class="row" style="background-color:rgb(238,238,238)">
+        <div class="col-8">
+            <img height="130px" src="{{ url_for('static', filename='logo_icon1.png') }}" width="130px">
         </div>
-        <div class="col">
-            AutoML
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-5">
-
-        </div>
-        <div class="col-md-1">
-            <a href="{{ url_for('register') }}">New Model</a>
-        </div>
-        <div class="col-md-1">
-            <a href=" {{ url_for('predict') }}">Predict</a>
-        </div>
-        <div class="col-md-5">
-
+        <div class="col buttons">
+            <button class="btn btn-outline-dark" id="new_model" onclick="location.href='{{ url_for('register') }}'"
+                    type="button">New Model
+            </button>
+            <button class="btn btn-outline-dark" id="predict" onclick="location.href='{{ url_for('predict') }}'"
+                    type="button">Predict
+            </button>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4">
+        <!--            {% with messages = get_flashed_messages(with_categories=true) %}-->
+        <!--            {% if messages %}-->
+        <!--            {% for category, message in messages %}-->
+        <!--            <div class="alert alert-{{ category }}">-->
+        <!--                {{ message }}-->
+        <!--            </div>-->
+        <!--            {% endfor %}-->
+        <!--            {% endif %}-->
+        <!--            {% endwith %}-->
+        {% block content %}{% endblock %}
+    </div>
+</div>
+<div class="modal fade" id="new_project">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
 
-        </div>
-        <div class="col-md-4" id="box" >
-            {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-            {% for category, message in messages %}
-            <div class="alert alert-{{ category }}">
-                {{ message }}
+            <div class="modal-header">
+                <h4 class="modal-title">Training in Progress...</h4>
             </div>
-            {% endfor %}
-            {% endif %}
-            {% endwith %}
-            {% block content %}{% endblock %}
-        </div>
-        <div class="col-md-4">
+            <div class="modal-body">
+                <img alt="Training in progress.."
+                     class="img-responsive" src="{{ url_for('static',filename='loading-hourglass.gif') }}">
+            </div>
 
         </div>
     </div>
 </div>
-
-<div id="loading">
-    <img alt="Training in progress.." src="{{ url_for('static',filename='loading-hourglass.gif') }}">
-</div>
-
 <script crossorigin="anonymous"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -71,23 +64,13 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script>
-
-
-
-        document.getElementById("loading").style.height = "0%";
-        document.getElementById('loading').style.visibility="hidden";
-
-$(document).ready(function(){
-$( "#input_form" ).submit(function( event ) {
-  $("#box").append("<img alt='Training in progress..' src='{{ url_for('static',filename='loading-hourglass.gif') }}' width='200px' height='200px' >");
-});
-});
-
-
-
-
+function showgif() {
+        $("#new_project").modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+}
 
 </script>
 </body>
-
 </html>

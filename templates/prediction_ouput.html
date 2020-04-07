@@ -1,11 +1,18 @@
 {% extends "home.html" %}
 {% block content %}
 <div class="content-section">
-    <div>
-        <p> {{ value }} </p>
+    <div class="form-group">
+        {{ value }}
     </div>
-    <div>
-        <a href= "{{ url_for('predicted_file',filename='breast1.csv') }}" download>Click here to download predicted file</a>
+
+    <div class="form-group">
+        <a download href="{{ url_for('predicted_file',filename='breast1.csv') }}">
+            <img alt="Download" height="25px" src="/static/download.png"
+                 width="25px">
+        </a>
+        <div class="form-group">
+            Click to Download Predicted file
+        </div>
     </div>
 </div>
 

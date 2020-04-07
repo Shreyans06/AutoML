@@ -1,7 +1,7 @@
 {% extends "home.html" %}
 {% block content %}
 <div class="content-section">
-    <form action="" enctype="multipart/form-data" method="post" id="input_form" >
+    <form action="" enctype="multipart/form-data" method="post" onsubmit="showgif()">
         {{ form.hidden_tag() }}
         <fieldset class="form-group">
             <div class="form-group">
@@ -48,11 +48,14 @@
             </div>
         </fieldset>
         <div class="form-group">
-            {{ form.submit(class="btn btn-primary") }}
+            <!--            <input type="submit" class="btn btn-primary" data-target="#new_project" data-toggle="modal" id="inp_submit">-->
+            {{ form.submit(class="btn btn-primary" ) }}
         </div>
     </form>
 </div>
 
 
+<script>
 
+</script>
 {% endblock content %}

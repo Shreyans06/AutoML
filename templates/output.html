@@ -1,13 +1,24 @@
 {% extends "home.html" %}
 {% block content %}
 <div class="content-section">
-    <div>
-        <p>Accuracy</p>
+    <div class="form-group">
+        Accuracy
+    </div>
+    <div class="form-group">
         {{ score*100 }} %
     </div>
-    <div>
-        <a href= "{{ url_for('uploaded_file',filename='best_model1.hdf5') }}" download>Click here to download model file</a>
+
+    <div class="form-group">
+        <a download href="{{ url_for('uploaded_file',filename='best_model1.hdf5') }}">
+            <img alt="Download" class="image-hover-highlight" height="30px"
+                 src="{{ url_for('static',filename='download.png') }}"
+                 width="30px">
+        </a>
+        <div class="form-group">
+            Click to Download Model file
+        </div>
     </div>
+
 </div>
 
 
