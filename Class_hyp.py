@@ -3,8 +3,8 @@ import re
 from collections import defaultdict
 import numpy as np
 import pandas as pd
-from tensorflow.keras.callbacks import EarlyStopping,ModelCheckpoint
-from tensorflow.keras.layers import Activation,Dense,Dropout
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from tensorflow.keras.layers import Activation, Dense, Dropout
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
 

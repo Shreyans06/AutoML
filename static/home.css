@@ -1,9 +1,11 @@
 .content-section {
-  background: #ffffff;
   padding: 10px 20px;
   border: 1px solid #dddddd;
   border-radius: 3px;
-  margin-bottom: 20px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 
 #load {
@@ -11,3 +13,24 @@
   display: flex;
   justify-content: center;
 }
+
+.buttons {
+ padding-top: 90px;
+}
+
+#new_model {
+margin-right:35px;
+}
+
+.modal-body > .img-responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-header > .modal-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

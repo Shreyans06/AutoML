@@ -13,7 +13,7 @@ X_train, X_test = ch.feature_scaling(encoded_input_df, encoded_input_df)
 
 y_pred = decoded_model.predict_classes(X_train)
 
-test_df['Target']=y_pred
+test_df['Target'] = y_pred
 test_df.to_csv('C:/Users/Shreyans/Desktop/breast11.csv', index=False)
 
 print(y_pred)

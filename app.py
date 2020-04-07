@@ -117,6 +117,7 @@ def register():
 
 @app.route('/machine_learning/<path:filename>/<target>', methods=['GET', 'POST'])
 def machine_learning(filename, target):
+
     score = nn_classification(filename, target)
     score = round(score, 2)
     return render_template('output.html', score=score)
@@ -161,7 +162,6 @@ def predict():
 def prediction(model_file, prediction_file):
     prediction_func(os.path.join(app.config['UPLOAD_FOLDER'] + '/uploaded_models/', model_file),
                os.path.join(app.config['UPLOAD_FOLDER'] + '/prediction_files/', prediction_file))
-    time.sleep(1)
     return render_template('prediction_ouput.html',value='Prediction done')
 
 
