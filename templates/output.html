@@ -9,7 +9,7 @@
     </div>
 
     <div class="form-group">
-        <a download href="{{ url_for('uploaded_file',filename='best_model1.hdf5') }}">
+        <a download href="/download_model/{{ model_file }}">
             <img alt="Download" class="image-hover-highlight" height="30px"
                  src="{{ url_for('static',filename='download.png') }}"
                  width="30px">
@@ -18,8 +18,25 @@
             Click to Download Model file
         </div>
     </div>
-
+     <div class="form-group">
+        <a download href="{{ url_for('uploaded_encoding_file',filename='encoding_file.obj') }}">
+            <img alt="Download" class="image-hover-highlight" height="30px"
+                 src="{{ url_for('static',filename='download.png') }}"
+                 width="30px">
+        </a>
+        <div class="form-group">
+            Click to Download Encoding file
+        </div>
+    </div>
+     <div class="form-group">
+        <a download href="{{ url_for('uploaded_scaling_file',filename='scaling.pkl') }}">
+            <img alt="Download" class="image-hover-highlight" height="30px"
+                 src="{{ url_for('static',filename='download.png') }}"
+                 width="30px">
+        </a>
+        <div class="form-group">
+            Click to Download Scaling file
+        </div>
+    </div>
 </div>
-
-
 {% endblock content %}

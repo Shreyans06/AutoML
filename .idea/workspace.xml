@@ -2,21 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04620b66-c490-494e-be43-cced0ffc5d19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Download/encoded_file/encoding_file.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Download/models/best_model.hdf5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Download/predicted_files/predicted.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Download/scaling/scaling.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/datasets/Churn_Modelling.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/datasets/breast-cancer.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/datasets/iris.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/encoding_file/encoding_file.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/encoding_file/encoding_file_1.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/prediction_files/Churn_Modelling1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/prediction_files/breast1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/prediction_files/iris1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/scaled_file/scaling.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/uploaded_models/best_model.hdf5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Upload/uploaded_models/best_model_1.hdf5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Class_hyp.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class_hyp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Neuralnetwork_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/Neuralnetwork_classification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/best_model1.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/models/best_model1.hdf5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predicted_files/breast1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/predicted_files/breast1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/breast-cancer.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/breast1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/best_model1.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/breast.hdf5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/predicted_files/breast1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prediction_files/breast1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/input_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/input_data.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/output.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/output.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/predict.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/predict.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/prediction_ouput.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/prediction_ouput.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploaded_models/breast.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/uploaded_models/breast.hdf5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploaded_models/breast.hdf5" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,8 +158,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.prediction" />
         <item itemvalue="Python.Neuralnetwork_classification" />
+        <item itemvalue="Python.prediction" />
         <item itemvalue="Python.hh" />
       </list>
     </recent_temporary>
@@ -170,26 +189,26 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state x="468" y="142" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1475.789@0.0.1475.789" timestamp="1585722694327" />
-    <state x="886" y="150" key="FileChooserDialogImpl" timestamp="1585917969568">
+    <state x="886" y="150" key="FileChooserDialogImpl" timestamp="1586332142265">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="886" y="150" key="FileChooserDialogImpl/0.0.1475.789@0.0.1475.789" timestamp="1585917969568" />
-    <state width="1453" height="126" key="GridCell.Tab.0.bottom" timestamp="1586281988629">
+    <state x="886" y="150" key="FileChooserDialogImpl/0.0.1475.789@0.0.1475.789" timestamp="1586332142265" />
+    <state width="1453" height="150" key="GridCell.Tab.0.bottom" timestamp="1586588728507">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state width="1453" height="126" key="GridCell.Tab.0.bottom/0.0.1475.789@0.0.1475.789" timestamp="1586281988629" />
-    <state width="1453" height="126" key="GridCell.Tab.0.center" timestamp="1586281988629">
+    <state width="1453" height="150" key="GridCell.Tab.0.bottom/0.0.1475.789@0.0.1475.789" timestamp="1586588728507" />
+    <state width="1453" height="150" key="GridCell.Tab.0.center" timestamp="1586588728507">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state width="1453" height="126" key="GridCell.Tab.0.center/0.0.1475.789@0.0.1475.789" timestamp="1586281988629" />
-    <state width="1453" height="126" key="GridCell.Tab.0.left" timestamp="1586281988628">
+    <state width="1453" height="150" key="GridCell.Tab.0.center/0.0.1475.789@0.0.1475.789" timestamp="1586588728507" />
+    <state width="1453" height="150" key="GridCell.Tab.0.left" timestamp="1586588728506">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state width="1453" height="126" key="GridCell.Tab.0.left/0.0.1475.789@0.0.1475.789" timestamp="1586281988628" />
-    <state width="1453" height="126" key="GridCell.Tab.0.right" timestamp="1586281988629">
+    <state width="1453" height="150" key="GridCell.Tab.0.left/0.0.1475.789@0.0.1475.789" timestamp="1586588728506" />
+    <state width="1453" height="150" key="GridCell.Tab.0.right" timestamp="1586588728507">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state width="1453" height="126" key="GridCell.Tab.0.right/0.0.1475.789@0.0.1475.789" timestamp="1586281988629" />
+    <state width="1453" height="150" key="GridCell.Tab.0.right/0.0.1475.789@0.0.1475.789" timestamp="1586588728507" />
     <state width="716" height="244" key="GridCell.Tab.1.bottom" timestamp="1585325593119">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
@@ -206,14 +225,14 @@
       <screen x="0" y="0" width="1475" height="789" />
     </state>
     <state width="716" height="244" key="GridCell.Tab.1.right/0.0.1475.789@0.0.1475.789" timestamp="1585325593119" />
-    <state x="58" y="75" key="SettingsEditor" timestamp="1585823615563">
+    <state x="58" y="75" key="SettingsEditor" timestamp="1586318817595">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="58" y="75" key="SettingsEditor/0.0.1475.789@0.0.1475.789" timestamp="1585823615563" />
-    <state x="439" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1586282085458">
+    <state x="58" y="75" key="SettingsEditor/0.0.1475.789@0.0.1475.789" timestamp="1586318817595" />
+    <state x="439" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1586497788293">
       <screen x="0" y="0" width="1475" height="789" />
     </state>
-    <state x="439" y="219" key="com.intellij.ide.util.TipDialog/0.0.1475.789@0.0.1475.789" timestamp="1586282085458" />
+    <state x="439" y="219" key="com.intellij.ide.util.TipDialog/0.0.1475.789@0.0.1475.789" timestamp="1586497788293" />
     <state x="479" y="38" key="refactoring.ChangeSignatureDialog" timestamp="1585842594559">
       <screen x="0" y="0" width="1475" height="789" />
     </state>

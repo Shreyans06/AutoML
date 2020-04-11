@@ -1,6 +1,6 @@
 .content-section {
   padding: 10px 20px;
-  border: 1px solid #dddddd;
+  border: 2px solid #dddddd;
   border-radius: 3px;
   display: inline-block;
   margin-left: auto;
@@ -34,3 +34,12 @@ margin-right:35px;
     margin-right: auto;
 }
 
+.image-hover-highlight:hover {
+ box-shadow :2px 2px 5px 2px #D5D8DC;
+}
+
+body {
+  background: #ffd89b;
+  background: -webkit-linear-gradient(to right, #ffd89b, #19547b);
+  background: linear-gradient(to right, #ffd89b, #19547b);
+}

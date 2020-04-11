@@ -5,7 +5,7 @@ import Class_hyp as ch
 
 decoded_model = load_model(os.path.join("models", 'best_model1.hdf5'))
 
-test_df = pd.read_csv('C:/Users/Shreyans/Desktop/breast1.csv')
+test_df = pd.read_csv('C:/Users/Shreyans/Desktop/Churn_Modelling1.csv')
 
 columns = test_df.columns.values.tolist()  # columns of input_df
 encoded_input_df = ch.test_columns(test_df, columns)

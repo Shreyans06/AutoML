@@ -14,5 +14,9 @@ class InputdataForm(FlaskForm):
 class PredictdataForm(FlaskForm):
     model_file = FileField('Model File',
                            validators=[FileRequired(), FileAllowed(['pkl', 'hdf5'], 'Pkl/HDF5 files only!')])
+    encoding_file = FileField('Encoding File',
+                           validators=[FileRequired(), FileAllowed(['obj'], 'obj files only!')])
+    scaling_file = FileField('Scaling File',
+                              validators=[FileRequired(), FileAllowed(['pkl'], 'Pkl files only!')])
     predict_file = FileField('Prediction File', validators=[FileRequired(), FileAllowed(['csv'], 'CSV files only!')])
     submit = SubmitField('Predict')
